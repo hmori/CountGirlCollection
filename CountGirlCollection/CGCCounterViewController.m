@@ -29,6 +29,7 @@
 
 - (IBAction)clearAction:(UIButton *)sender {
     LOG_CURRENT_METHOD;
+    [self clearCount];
 }
 
 - (IBAction)profileAction:(UIButton *)sender {
@@ -42,15 +43,22 @@
 
 - (IBAction)touchOtherAction:(UIButton *)sender {
     LOG_CURRENT_METHOD;
+    [self countup];
 }
 
 #pragma mark - 
 - (void)countup {
     LOG_CURRENT_METHOD;
     _counter++;
-    
-    LOG(@"_counter=%lu", (unsigned long)_counter);
-    
+    [self refreshCounter];
+}
+
+- (void)clearCount {
+    _counter = 0;
+    [self refreshCounter];
+}
+
+- (void)refreshCounter {
     NSUInteger number2 = (_counter / 100);
     NSUInteger number1 = ((_counter - (number2 * 100)) / 10);
     NSUInteger number0 = _counter - (number2 * 100) - (number1 * 10);
@@ -59,6 +67,7 @@
     [_counterImageView1 setNumber:number1];
     [_counterImageView0 setNumber:number0];
 }
+
 
 
 
