@@ -8,11 +8,21 @@
 
 #import "CGCCounterViewController.h"
 #import "CGCCounterImageView.h"
+#import "CGCGirlUpperImageView.h"
+#import "CGCGirlMiddleImageView.h"
+#import "CGCGirlUnderImageView.h"
+
 
 @interface CGCCounterViewController ()
 @property (weak, nonatomic) IBOutlet CGCCounterImageView *counterImageView2;
 @property (weak, nonatomic) IBOutlet CGCCounterImageView *counterImageView1;
 @property (weak, nonatomic) IBOutlet CGCCounterImageView *counterImageView0;
+@property (strong, nonatomic) IBOutlet CGCGirlUpperImageView *girlUpperImageView;
+@property (weak, nonatomic) IBOutlet CGCGirlMiddleImageView *girlMiddleImageView;
+@property (weak, nonatomic) IBOutlet CGCGirlUnderImageView *girlUnderImageView;
+
+@property (weak, nonatomic) IBOutlet UIImageView *bgEmotionBarImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *emotionBarImageView;
 @end
 
 @implementation CGCCounterViewController {
@@ -53,6 +63,7 @@
         return;
     }
     _emotionLevel++;
+    [self refreshEmotion];
 }
 
 - (IBAction)debugEmotionDown:(UIButton *)sender {
@@ -61,7 +72,33 @@
         return;
     }
     _emotionLevel--;
+    [self refreshEmotion];
 }
+
+
+- (void)refreshEmotion {
+    LOG(@"_emotionLevel=%ld", (long)_emotionLevel);
+    
+    CGRect bgRect = _bgEmotionBarImageView.frame;
+    _emotionBarImageView.frame = (CGRect){
+        bgRect.origin.x,
+        bgRect.origin.y + (bgRect.size.height) - (bgRect.size.height / 4) * (_emotionLevel),
+        bgRect.size.width,
+        (bgRect.size.height / 4) * _emotionLevel};
+    
+    if (_emotionLevel == 0) {
+        [_girlUpperImageView setEmotionType:EmotionType_Normal];
+    } else if (_emotionLevel == 1) {
+        [_girlUpperImageView setEmotionType:EmotionType_Sad];
+    } else if (_emotionLevel == 2) {
+        [_girlUpperImageView setEmotionType:EmotionType_Anger];
+    } else if (_emotionLevel == 3) {
+        [_girlUpperImageView setEmotionType:EmotionType_Smile];
+    } else if (_emotionLevel == 4) {
+        [_girlUpperImageView setEmotionType:EmotionType_Shy];
+    }
+}
+
 
 
 #pragma mark - 

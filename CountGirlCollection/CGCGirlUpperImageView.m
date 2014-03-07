@@ -28,7 +28,7 @@
     LOG_CURRENT_METHOD;
     self.highlighted = YES;
     
-    [self performSelector:@selector(unblink:) withObject:nil afterDelay:0.05f];
+    [self performSelector:@selector(unblink:) withObject:nil afterDelay:0.2f];
 }
 
 - (void)unblink:(id)sender {
@@ -37,9 +37,9 @@
 
 #pragma mark - 
 
-- (void)setEmotion:(EmotionType)emotionType {
+- (void)setEmotionType:(EmotionType)emotionType {
     _emotionType = emotionType;
-
+    
     if (emotionType == EmotionType_Normal) {
         self.image = [UIImage imageNamed:@"Numbers-0-filled-icon"];
         self.highlightedImage = [UIImage imageNamed:@"Numbers-1-filled-icon"];
