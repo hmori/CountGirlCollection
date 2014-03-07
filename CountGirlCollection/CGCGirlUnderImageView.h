@@ -1,5 +1,5 @@
 //
-//  CGCCounterImageView.h
+//  CGCGirlUnderImageView.h
 //  CountGirlCollection
 //
 //  Created by Hidetoshi Mori on 2014/03/08.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CGCCounterImageView : UIImageView
-@property (nonatomic) NSInteger number;
+@interface CGCGirlUnderImageView : UIImageView
+
 @end

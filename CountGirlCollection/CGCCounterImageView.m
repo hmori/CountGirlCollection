@@ -10,28 +10,10 @@
 
 @implementation CGCCounterImageView
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
-
-- (void)setNumber:(NSUInteger)number {
+- (void)setNumber:(NSInteger)number {
     _number = number;
     
-    NSString *imageName = [NSString stringWithFormat:@"Numbers-%lu-filled-icon", (unsigned long)number];
+    NSString *imageName = [NSString stringWithFormat:@"Numbers-%ld-filled-icon", (long)number];
     self.image = [UIImage imageNamed:imageName];
 }
 

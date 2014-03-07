@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B63BC89F18CA341B004BBF2C /* CGCCounterImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B63BC89E18CA341B004BBF2C /* CGCCounterImageView.m */; };
+		B63BC8A218CA41B0004BBF2C /* CGCGirlUpperImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B63BC8A118CA41B0004BBF2C /* CGCGirlUpperImageView.m */; };
+		B63BC8A518CA41CE004BBF2C /* CGCGirlMiddleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B63BC8A418CA41CE004BBF2C /* CGCGirlMiddleImageView.m */; };
+		B63BC8A818CA41F3004BBF2C /* CGCGirlUnderImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B63BC8A718CA41F3004BBF2C /* CGCGirlUnderImageView.m */; };
 		B684797A18CA293E00957C4E /* CGCCounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B684797918CA293E00957C4E /* CGCCounterViewController.m */; };
 		B6E66E0C18CA16FB0061CB27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E66E0B18CA16FB0061CB27 /* Foundation.framework */; };
 		B6E66E0E18CA16FB0061CB27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E66E0D18CA16FB0061CB27 /* CoreGraphics.framework */; };
@@ -38,6 +41,12 @@
 /* Begin PBXFileReference section */
 		B63BC89D18CA341B004BBF2C /* CGCCounterImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGCCounterImageView.h; sourceTree = "<group>"; };
 		B63BC89E18CA341B004BBF2C /* CGCCounterImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGCCounterImageView.m; sourceTree = "<group>"; };
+		B63BC8A018CA41B0004BBF2C /* CGCGirlUpperImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGCGirlUpperImageView.h; sourceTree = "<group>"; };
+		B63BC8A118CA41B0004BBF2C /* CGCGirlUpperImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGCGirlUpperImageView.m; sourceTree = "<group>"; };
+		B63BC8A318CA41CE004BBF2C /* CGCGirlMiddleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGCGirlMiddleImageView.h; sourceTree = "<group>"; };
+		B63BC8A418CA41CE004BBF2C /* CGCGirlMiddleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGCGirlMiddleImageView.m; sourceTree = "<group>"; };
+		B63BC8A618CA41F3004BBF2C /* CGCGirlUnderImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGCGirlUnderImageView.h; sourceTree = "<group>"; };
+		B63BC8A718CA41F3004BBF2C /* CGCGirlUnderImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGCGirlUnderImageView.m; sourceTree = "<group>"; };
 		B684797818CA293E00957C4E /* CGCCounterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGCCounterViewController.h; sourceTree = "<group>"; };
 		B684797918CA293E00957C4E /* CGCCounterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGCCounterViewController.m; sourceTree = "<group>"; };
 		B6E66E0818CA16FB0061CB27 /* CountGirlCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountGirlCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +101,12 @@
 				B684797918CA293E00957C4E /* CGCCounterViewController.m */,
 				B63BC89D18CA341B004BBF2C /* CGCCounterImageView.h */,
 				B63BC89E18CA341B004BBF2C /* CGCCounterImageView.m */,
+				B63BC8A018CA41B0004BBF2C /* CGCGirlUpperImageView.h */,
+				B63BC8A118CA41B0004BBF2C /* CGCGirlUpperImageView.m */,
+				B63BC8A318CA41CE004BBF2C /* CGCGirlMiddleImageView.h */,
+				B63BC8A418CA41CE004BBF2C /* CGCGirlMiddleImageView.m */,
+				B63BC8A618CA41F3004BBF2C /* CGCGirlUnderImageView.h */,
+				B63BC8A718CA41F3004BBF2C /* CGCGirlUnderImageView.m */,
 			);
 			name = Counter;
 			sourceTree = "<group>";
@@ -284,10 +299,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6E66E4018CA1C8D0061CB27 /* CGCVoiceManager.m in Sources */,
+				B63BC8A818CA41F3004BBF2C /* CGCGirlUnderImageView.m in Sources */,
 				B684797A18CA293E00957C4E /* CGCCounterViewController.m in Sources */,
 				B6E66E1C18CA16FB0061CB27 /* CGCAppDelegate.m in Sources */,
 				B63BC89F18CA341B004BBF2C /* CGCCounterImageView.m in Sources */,
 				B6E66E1818CA16FB0061CB27 /* main.m in Sources */,
+				B63BC8A518CA41CE004BBF2C /* CGCGirlMiddleImageView.m in Sources */,
+				B63BC8A218CA41B0004BBF2C /* CGCGirlUpperImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

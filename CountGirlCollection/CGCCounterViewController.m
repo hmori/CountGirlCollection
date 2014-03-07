@@ -16,7 +16,8 @@
 @end
 
 @implementation CGCCounterViewController {
-    NSUInteger _counter;
+    NSInteger _counter;
+    NSInteger _emotionLevel;
 }
 
 - (void)viewDidLoad {
@@ -46,6 +47,23 @@
     [self countup];
 }
 
+- (IBAction)debugEmotionUp:(UIButton *)sender {
+    LOG_CURRENT_METHOD;
+    if (_emotionLevel == 4) {
+        return;
+    }
+    _emotionLevel++;
+}
+
+- (IBAction)debugEmotionDown:(UIButton *)sender {
+    LOG_CURRENT_METHOD;
+    if (_emotionLevel == 0) {
+        return;
+    }
+    _emotionLevel--;
+}
+
+
 #pragma mark - 
 - (void)countup {
     LOG_CURRENT_METHOD;
@@ -59,9 +77,9 @@
 }
 
 - (void)refreshCounter {
-    NSUInteger number2 = (_counter / 100);
-    NSUInteger number1 = ((_counter - (number2 * 100)) / 10);
-    NSUInteger number0 = _counter - (number2 * 100) - (number1 * 10);
+    NSInteger number2 = (_counter / 100);
+    NSInteger number1 = ((_counter - (number2 * 100)) / 10);
+    NSInteger number0 = _counter - (number2 * 100) - (number1 * 10);
     
     [_counterImageView2 setNumber:number2];
     [_counterImageView1 setNumber:number1];
