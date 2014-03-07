@@ -63,10 +63,23 @@
         NSMutableArray *voiceTypeTouchBust = [NSMutableArray array]; //0-2
         [voiceTypeDict setObject:voiceTypeTouchBust forKey:kVoiceTypeTouchBust];
         
-        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"おっぱい１" rate:0.2f]];
-        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"おっぱい２" rate:0.2f]];
-        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"おっぱい３" rate:0.2f]];
-
+//        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"けいちゃん" rate:0.2f]];
+//        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"はやくきて" rate:0.2f]];
+        
+        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"えー、、はやい。。。" rate:0.01f]];
+        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"もっと、、ゆっくりして" rate:0.2f]];
+        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"わたしのしんたいメンテナンスしてもいいよ" rate:0.2f]];
+        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"ガソリン…もっと…いれて" rate:0.2f]];
+        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"もう、わたしのウインカーブレブレだぞ" rate:0.2f]];
+        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"さいきんわたしにのってくれないよね" rate:0.2f]];
+        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"もう、エンジンオイル…ぬれちゃうよ" rate:0.2f]];
+        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"ウォッシャーえき…キャッ、、、" rate:0.2f]];
+        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"だっちゃく、だっちゃくゥ" rate:0.2f]];
+        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"そこのボルトなめっちゃった" rate:0.2f]];
+        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"ふええ、、ピストンげんかいだよう…" rate:0.2f]];
+        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"きゅうゆこうオシャカになっちゃうううぅ" rate:0.2f]];
+        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"エンジンオイル…ぬいとくね" rate:0.2f]];
+        
         
         
         NSMutableArray *voiceTypeTouchOther = [NSMutableArray array]; //0-2

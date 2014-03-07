@@ -22,16 +22,18 @@
     CGCVoiceManager *voiceManager = [CGCVoiceManager sharedManager];
 //    NSLog(@"%@", [voiceManager voiceOfCharacter:0 ofType:kVoiceTypeAlarm ofIndex:0].text);
     
-    AVSpeechSynthesizer* speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
-    NSString* speakingText = [voiceManager voiceOfCharacter:0 ofType:kVoiceTypeTouchBust ofIndex:0].text;
-    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:speakingText];
-    utterance.rate = 0.1f;        //読み上げる速さ
-    utterance.pitchMultiplier = 1.0f;                           //声の高さ
-    utterance.volume = 1.0f;                                    //声の大きさ
-    NSTimeInterval interval = 1;
-    utterance.preUtteranceDelay = interval;                     //しゃべりだす前のインターバル
-    utterance.postUtteranceDelay = interval;                    //しゃべり終わった後の次のメッセージをしゃべるまでのインターバル
-    [speechSynthesizer speakUtterance:utterance];
+    for (int i = 0; i < 2; i++) {
+        AVSpeechSynthesizer* speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
+        NSString* speakingText = [voiceManager voiceOfCharacter:0 ofType:kVoiceTypeTouchBust ofIndex:i].text;
+        AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:speakingText];
+        utterance.rate = [voiceManager voiceOfCharacter:0 ofType:kVoiceTypeTouchBust ofIndex:i].rate;        //読み上げる速さ
+        utterance.pitchMultiplier = 1.0f;                           //声の高さ
+        utterance.volume = 2.0f;                                    //声の大きさ
+        NSTimeInterval interval = 1.0;
+        utterance.preUtteranceDelay = interval;                     //しゃべりだす前のインターバル
+        utterance.postUtteranceDelay = interval;                    //しゃべり終わった後の次のメッセージをしゃべるまでのインターバル
+        [speechSynthesizer speakUtterance:utterance];
+    }
     
     return YES;
 }
