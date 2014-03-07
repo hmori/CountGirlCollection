@@ -7,6 +7,7 @@
 //
 
 #import "CGCCharacterSelectTableViewController.h"
+#import "CGCCounterViewController.h"
 
 @interface CGCCharacterSelectTableViewController ()
 
@@ -42,28 +43,14 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    LOG_CURRENT_METHOD;
+    LOG(@"indexPath=%@", indexPath);
     
-    // Configure the cell...
+    UIStoryboard *counterStoryboard = [UIStoryboard storyboardWithName:@"iphone_counter" bundle:nil];
+    CGCCounterViewController *counterViewController = [counterStoryboard instantiateViewControllerWithIdentifier:@"CGCCounterViewController"];
     
-    return cell;
+    [self.navigationController pushViewController:counterViewController animated:YES];
 }
 
 /*

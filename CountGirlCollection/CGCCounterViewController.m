@@ -32,10 +32,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.navigationController.navigationBar.hidden = YES;
 }
 
 - (IBAction)menuAction:(UIButton *)sender {
     LOG_CURRENT_METHOD;
+    
+    self.navigationController.navigationBar.hidden = NO;
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)clearAction:(UIButton *)sender {
