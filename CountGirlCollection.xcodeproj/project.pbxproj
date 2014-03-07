@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2908276C18CA4CE500D16265 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2908276B18CA4CE500D16265 /* AVFoundation.framework */; };
 		B63BC89F18CA341B004BBF2C /* CGCCounterImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B63BC89E18CA341B004BBF2C /* CGCCounterImageView.m */; };
 		B63BC8A218CA41B0004BBF2C /* CGCGirlUpperImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B63BC8A118CA41B0004BBF2C /* CGCGirlUpperImageView.m */; };
 		B63BC8A518CA41CE004BBF2C /* CGCGirlMiddleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B63BC8A418CA41CE004BBF2C /* CGCGirlMiddleImageView.m */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2908276B18CA4CE500D16265 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B63BC89D18CA341B004BBF2C /* CGCCounterImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGCCounterImageView.h; sourceTree = "<group>"; };
 		B63BC89E18CA341B004BBF2C /* CGCCounterImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGCCounterImageView.m; sourceTree = "<group>"; };
 		B63BC8A018CA41B0004BBF2C /* CGCGirlUpperImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGCGirlUpperImageView.h; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2908276C18CA4CE500D16265 /* AVFoundation.framework in Frameworks */,
 				B6E66E0E18CA16FB0061CB27 /* CoreGraphics.framework in Frameworks */,
 				B6E66E1018CA16FB0061CB27 /* UIKit.framework in Frameworks */,
 				B6E66E0C18CA16FB0061CB27 /* Foundation.framework in Frameworks */,
@@ -133,6 +136,7 @@
 		B6E66E0A18CA16FB0061CB27 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2908276B18CA4CE500D16265 /* AVFoundation.framework */,
 				B6E66E0B18CA16FB0061CB27 /* Foundation.framework */,
 				B6E66E0D18CA16FB0061CB27 /* CoreGraphics.framework */,
 				B6E66E0F18CA16FB0061CB27 /* UIKit.framework */,
