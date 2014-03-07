@@ -14,6 +14,7 @@
 		B63BC8A518CA41CE004BBF2C /* CGCGirlMiddleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B63BC8A418CA41CE004BBF2C /* CGCGirlMiddleImageView.m */; };
 		B63BC8A818CA41F3004BBF2C /* CGCGirlUnderImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B63BC8A718CA41F3004BBF2C /* CGCGirlUnderImageView.m */; };
 		B63BC8AA18CA844D004BBF2C /* iphone_select_character.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63BC8A918CA844D004BBF2C /* iphone_select_character.storyboard */; };
+		B63BC8AE18CA896A004BBF2C /* CGCProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63BC8AD18CA896A004BBF2C /* CGCProfileViewController.m */; };
 		B684797A18CA293E00957C4E /* CGCCounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B684797918CA293E00957C4E /* CGCCounterViewController.m */; };
 		B6E66E0C18CA16FB0061CB27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E66E0B18CA16FB0061CB27 /* Foundation.framework */; };
 		B6E66E0E18CA16FB0061CB27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E66E0D18CA16FB0061CB27 /* CoreGraphics.framework */; };
@@ -54,6 +55,8 @@
 		B63BC8A618CA41F3004BBF2C /* CGCGirlUnderImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGCGirlUnderImageView.h; sourceTree = "<group>"; };
 		B63BC8A718CA41F3004BBF2C /* CGCGirlUnderImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGCGirlUnderImageView.m; sourceTree = "<group>"; };
 		B63BC8A918CA844D004BBF2C /* iphone_select_character.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iphone_select_character.storyboard; sourceTree = "<group>"; };
+		B63BC8AC18CA896A004BBF2C /* CGCProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGCProfileViewController.h; sourceTree = "<group>"; };
+		B63BC8AD18CA896A004BBF2C /* CGCProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGCProfileViewController.m; sourceTree = "<group>"; };
 		B684797818CA293E00957C4E /* CGCCounterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGCCounterViewController.h; sourceTree = "<group>"; };
 		B684797918CA293E00957C4E /* CGCCounterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGCCounterViewController.m; sourceTree = "<group>"; };
 		B6E66E0818CA16FB0061CB27 /* CountGirlCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountGirlCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +114,15 @@
 			name = CharacterSelect;
 			sourceTree = "<group>";
 		};
+		B63BC8AB18CA893A004BBF2C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B63BC8AC18CA896A004BBF2C /* CGCProfileViewController.h */,
+				B63BC8AD18CA896A004BBF2C /* CGCProfileViewController.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
 		B684797718CA28FE00957C4E /* Counter */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +174,7 @@
 		B6E66E1118CA16FB0061CB27 /* CountGirlCollection */ = {
 			isa = PBXGroup;
 			children = (
+				B63BC8AB18CA893A004BBF2C /* Profile */,
 				2908276D18CA82DD00D16265 /* CharacterSelect */,
 				B684797718CA28FE00957C4E /* Counter */,
 				B6E66E3D18CA1BF00061CB27 /* Model */,
@@ -325,6 +338,7 @@
 				B6E66E1C18CA16FB0061CB27 /* CGCAppDelegate.m in Sources */,
 				2908277018CA833900D16265 /* CGCCharacterSelectTableViewController.m in Sources */,
 				B63BC89F18CA341B004BBF2C /* CGCCounterImageView.m in Sources */,
+				B63BC8AE18CA896A004BBF2C /* CGCProfileViewController.m in Sources */,
 				B6E66E1818CA16FB0061CB27 /* main.m in Sources */,
 				B63BC8A518CA41CE004BBF2C /* CGCGirlMiddleImageView.m in Sources */,
 				B63BC8A218CA41B0004BBF2C /* CGCGirlUpperImageView.m in Sources */,

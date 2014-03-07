@@ -11,7 +11,7 @@
 #import "CGCGirlUpperImageView.h"
 #import "CGCGirlMiddleImageView.h"
 #import "CGCGirlUnderImageView.h"
-
+#import "CGCProfileViewController.h"
 
 @interface CGCCounterViewController ()
 @property (weak, nonatomic) IBOutlet CGCCounterImageView *counterImageView2;
@@ -50,6 +50,10 @@
 
 - (IBAction)profileAction:(UIButton *)sender {
     LOG_CURRENT_METHOD;
+    
+    CGCProfileViewController *profileViewController = [[CGCProfileViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:profileViewController];
+    [self presentViewController:navigationController animated:YES completion:nil];
 }
 
 - (IBAction)touchBustAction:(UIButton *)sender {
