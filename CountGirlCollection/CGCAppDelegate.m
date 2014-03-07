@@ -7,6 +7,7 @@
 //
 
 #import "CGCAppDelegate.h"
+#import "CGCVoiceManager.h"
 
 @implementation CGCAppDelegate
 
@@ -16,6 +17,9 @@
 //    // Override point for customization after application launch.
 //    self.window.backgroundColor = [UIColor whiteColor];
 //    [self.window makeKeyAndVisible];
+    CGCVoiceManager *voiceManager = [CGCVoiceManager sharedManager];
+    NSLog(@"%@", [voiceManager voiceOfCharacter:0 ofType:kVoiceTypeAlarm ofIndex:0].text);
+    
     return YES;
 }
 
