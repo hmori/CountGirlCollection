@@ -10,4 +10,6 @@
 
 @interface CGCGirlMiddleImageView : UIImageView
 
+@property (nonatomic) BOOL animated;
+
 @end

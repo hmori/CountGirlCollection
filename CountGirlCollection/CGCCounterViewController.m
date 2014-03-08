@@ -62,6 +62,7 @@
 
 - (IBAction)touchBustAction:(UIButton *)sender {
     LOG_CURRENT_METHOD;
+    [_girlMiddleImageView setAnimated:YES];
     [self countup];
 }
 
