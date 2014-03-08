@@ -13,7 +13,7 @@
 - (void)setNumber:(NSInteger)number {
     _number = number;
     
-    NSString *imageName = [NSString stringWithFormat:@"Numbers-%ld-filled-icon", (long)number];
+    NSString *imageName = [NSString stringWithFormat:@"img_counter_%ld", (long)number];
     self.image = [UIImage imageNamed:imageName];
 }
 

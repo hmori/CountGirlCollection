@@ -10,4 +10,6 @@
 
 @interface CGCCounterViewController : UIViewController
 
+@property (nonatomic) NSUInteger charactorIndex;
+
 @end

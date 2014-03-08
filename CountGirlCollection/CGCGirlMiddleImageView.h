@@ -10,6 +10,7 @@
 
 @interface CGCGirlMiddleImageView : UIImageView
 
+@property (nonatomic) NSUInteger charactorIndex;
 @property (nonatomic) BOOL animated;
 
 @end

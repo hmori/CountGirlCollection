@@ -18,6 +18,7 @@ typedef enum {
 
 @interface CGCGirlUpperImageView : UIImageView
 
+@property (nonatomic) NSUInteger charactorIndex;
 @property (nonatomic) EmotionType emotionType;
 
 @end

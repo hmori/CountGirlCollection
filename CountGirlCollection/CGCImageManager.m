@@ -32,25 +32,37 @@
         [dic setObject:[UIImage imageNamed:@"img_girl_upper_normal"] forKey:@"kGirlUpper_EmotionType_Normal"];
         [dic setObject:[UIImage imageNamed:@"img_girl_upper_normal_b"] forKey:@"kGirlUpper_EmotionType_Normal_B"];
         [dic setObject:[UIImage imageNamed:@"img_girl_upper_smile"] forKey:@"kGirlUpper_EmotionType_Smile"];
-        [dic setObject:[UIImage imageNamed:@"img_girl_upper_smile_b"] forKey:@"kGirlUpper_EmotionType_Smile_B"];
+        [dic setObject:[UIImage imageNamed:@"img_girl_upper_smile"] forKey:@"kGirlUpper_EmotionType_Smile_B"];
         [dic setObject:[UIImage imageNamed:@"img_girl_upper_anger"] forKey:@"kGirlUpper_EmotionType_Anger"];
         [dic setObject:[UIImage imageNamed:@"img_girl_upper_anger_b"] forKey:@"kGirlUpper_EmotionType_Anger_B"];
         [dic setObject:[UIImage imageNamed:@"img_girl_upper_shy"] forKey:@"kGirlUpper_EmotionType_Shy"];
-        [dic setObject:[UIImage imageNamed:@"img_girl_upper_shy_b"] forKey:@"kGirlUpper_EmotionType_Shy_B"];
-        [dic setObject:[UIImage imageNamed:@"img_girl_upper_affection"] forKey:@"kGirlUpper_EmotionType_Affection"];
-        [dic setObject:[UIImage imageNamed:@"img_girl_upper_affection_b"] forKey:@"kGirlUpper_EmotionType_Affection_B"];
+        [dic setObject:[UIImage imageNamed:@"img_girl_upper_shy"] forKey:@"kGirlUpper_EmotionType_Shy_B"];
+        [dic setObject:[UIImage imageNamed:@"img_girl_upper_shy"] forKey:@"kGirlUpper_EmotionType_Affection"];
+        [dic setObject:[UIImage imageNamed:@"img_girl_upper_shy"] forKey:@"kGirlUpper_EmotionType_Affection_B"];
         
-        [dic setObject:[UIImage imageNamed:@"img_girl_middle_0"] forKey:@"kGirlMiddle_0"];
-        [dic setObject:[UIImage imageNamed:@"img_girl_middle_1"] forKey:@"kGirlMiddle_1"];
-        [dic setObject:[UIImage imageNamed:@"img_girl_middle_2"] forKey:@"kGirlMiddle_2"];
-        [dic setObject:[UIImage imageNamed:@"img_girl_middle_3"] forKey:@"kGirlMiddle_3"];
-        [dic setObject:[UIImage imageNamed:@"img_girl_middle_4"] forKey:@"kGirlMiddle_4"];
-        [dic setObject:[UIImage imageNamed:@"img_girl_middle_5"] forKey:@"kGirlMiddle_5"];
-        [dic setObject:[UIImage imageNamed:@"img_girl_middle_6"] forKey:@"kGirlMiddle_6"];
-        [dic setObject:[UIImage imageNamed:@"img_girl_middle_7"] forKey:@"kGirlMiddle_7"];
-        [dic setObject:[UIImage imageNamed:@"img_girl_middle_8"] forKey:@"kGirlMiddle_8"];
-        [dic setObject:[UIImage imageNamed:@"img_girl_middle_9"] forKey:@"kGirlMiddle_9"];
-        
+        [dic setObject:[UIImage imageNamed:@"img_girl_middle_bg"] forKey:@"kGirlMiddle"];
+
+        [dic setObject:[UIImage imageNamed:@"img_girl_bust_0"] forKey:@"kGirlBust_0"];
+        [dic setObject:[UIImage imageNamed:@"img_girl_bust_1"] forKey:@"kGirlBust_1"];
+        [dic setObject:[UIImage imageNamed:@"img_girl_bust_2"] forKey:@"kGirlBust_2"];
+        [dic setObject:[UIImage imageNamed:@"img_girl_bust_3"] forKey:@"kGirlBust_3"];
+        [dic setObject:[UIImage imageNamed:@"img_girl_bust_4"] forKey:@"kGirlBust_4"];
+        [dic setObject:[UIImage imageNamed:@"img_girl_bust_5"] forKey:@"kGirlBust_5"];
+        [dic setObject:[UIImage imageNamed:@"img_girl_bust_6"] forKey:@"kGirlBust_6"];
+        [dic setObject:[UIImage imageNamed:@"img_girl_bust_7"] forKey:@"kGirlBust_7"];
+        [dic setObject:[UIImage imageNamed:@"img_girl_bust_8"] forKey:@"kGirlBust_8"];
+        [dic setObject:[UIImage imageNamed:@"img_girl_bust_9"] forKey:@"kGirlBust_9"];
+        [dic setObject:[UIImage imageNamed:@"img_girl_bust_10"] forKey:@"kGirlBust_10"];
+        [dic setObject:[UIImage imageNamed:@"img_girl_bust_11"] forKey:@"kGirlBust_11"];
+        [dic setObject:[UIImage imageNamed:@"img_girl_bust_12"] forKey:@"kGirlBust_12"];
+        [dic setObject:[UIImage imageNamed:@"img_girl_bust_13"] forKey:@"kGirlBust_13"];
+        [dic setObject:[UIImage imageNamed:@"img_girl_bust_14"] forKey:@"kGirlBust_14"];
+        [dic setObject:[UIImage imageNamed:@"img_girl_bust_15"] forKey:@"kGirlBust_15"];
+        [dic setObject:[UIImage imageNamed:@"img_girl_bust_16"] forKey:@"kGirlBust_16"];
+        [dic setObject:[UIImage imageNamed:@"img_girl_bust_17"] forKey:@"kGirlBust_17"];
+        [dic setObject:[UIImage imageNamed:@"img_girl_bust_18"] forKey:@"kGirlBust_18"];
+        [dic setObject:[UIImage imageNamed:@"img_girl_bust_19"] forKey:@"kGirlBust_19"];
+
         [dic setObject:[UIImage imageNamed:@"img_girl_under_0"] forKey:@"kGirlUnder_0"];
         [dic setObject:[UIImage imageNamed:@"img_girl_under_1"] forKey:@"kGirlUnder_1"];
         [dic setObject:[UIImage imageNamed:@"img_girl_under_2"] forKey:@"kGirlUnder_2"];

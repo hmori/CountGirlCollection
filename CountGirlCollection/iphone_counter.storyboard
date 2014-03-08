@@ -16,28 +16,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Numbers-0-filled-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Fat-xQ-Vmt" customClass="CGCCounterImageView">
-                                <rect key="frame" x="97" y="27" width="64" height="64"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img_bg" translatesAutoresizingMaskIntoConstraints="NO" id="ZXj-xW-XXG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Numbers-0-filled-icon" translatesAutoresizingMaskIntoConstraints="NO" id="0Gn-bm-e8Z" customClass="CGCCounterImageView">
-                                <rect key="frame" x="159" y="27" width="64" height="64"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img_counter_0" translatesAutoresizingMaskIntoConstraints="NO" id="Fat-xQ-Vmt" customClass="CGCCounterImageView">
+                                <rect key="frame" x="226" y="23" width="28" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Numbers-0-filled-icon" translatesAutoresizingMaskIntoConstraints="NO" id="PJ1-RN-ha4" customClass="CGCCounterImageView">
-                                <rect key="frame" x="221" y="27" width="64" height="64"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img_counter_0" translatesAutoresizingMaskIntoConstraints="NO" id="0Gn-bm-e8Z" customClass="CGCCounterImageView">
+                                <rect key="frame" x="254" y="23" width="28" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Numbers-0-filled-icon" highlightedImage="Numbers-1-filled-icon" translatesAutoresizingMaskIntoConstraints="NO" id="zQV-B4-jP6" customClass="CGCGirlUpperImageView">
-                                <rect key="frame" x="45" y="129" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img_counter_0" translatesAutoresizingMaskIntoConstraints="NO" id="PJ1-RN-ha4" customClass="CGCCounterImageView">
+                                <rect key="frame" x="282" y="23" width="28" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g7b-la-ec6" customClass="CGCGirlMiddleImageView">
-                                <rect key="frame" x="45" y="255" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img_girl_upper_normal" translatesAutoresizingMaskIntoConstraints="NO" id="zQV-B4-jP6" customClass="CGCGirlUpperImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UYl-MT-bCU" customClass="CGCGirlUnderImageView">
-                                <rect key="frame" x="45" y="381" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img_girl_under_0" translatesAutoresizingMaskIntoConstraints="NO" id="UYl-MT-bCU" customClass="CGCGirlUnderImageView">
+                                <rect key="frame" x="0.0" y="350" width="320" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img_girl_middle_bg" translatesAutoresizingMaskIntoConstraints="NO" id="OrX-89-4l1">
+                                <rect key="frame" x="0.0" y="170" width="320" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img_girl_bust_0" translatesAutoresizingMaskIntoConstraints="NO" id="g7b-la-ec6" customClass="CGCGirlMiddleImageView">
+                                <rect key="frame" x="81" y="201" width="125" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWf-Cq-sfH">
@@ -51,7 +59,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66O-7f-cH0">
-                                <rect key="frame" x="263" y="96" width="37" height="30"/>
+                                <rect key="frame" x="268" y="78" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Clear">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -70,24 +78,24 @@
                                     <action selector="profileAction:" destination="stz-oz-due" eventType="touchUpInside" id="RnC-9s-CqC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RE-d1-SpY">
-                                <rect key="frame" x="122" y="178" width="77" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Touch Bust">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="touchBustAction:" destination="stz-oz-due" eventType="touchUpInside" id="F4Y-hB-7Pg"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nc9-Og-8oY">
-                                <rect key="frame" x="118" y="343" width="84" height="30"/>
+                                <rect key="frame" x="40" y="0.0" width="200" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Touch Other">
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="touchOtherAction:" destination="stz-oz-due" eventType="touchUpInside" id="nAC-8O-sFv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RE-d1-SpY">
+                                <rect key="frame" x="70" y="190" width="160" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchBustAction:" destination="stz-oz-due" eventType="touchUpInside" id="F4Y-hB-7Pg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyU-Bq-V3P">
@@ -110,13 +118,13 @@
                                     <action selector="debugEmotionDown:" destination="stz-oz-due" eventType="touchUpInside" id="kJj-h0-cYt"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fKB-On-c5g">
-                                <rect key="frame" x="10" y="89" width="20" height="420"/>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fKB-On-c5g">
+                                <rect key="frame" x="5" y="84" width="30" height="450"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tcs-uo-6Ux">
-                                <rect key="frame" x="10" y="509" width="20" height="0.0"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bar" translatesAutoresizingMaskIntoConstraints="NO" id="Tcs-uo-6Ux">
+                                <rect key="frame" x="5" y="84" width="30" height="1"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
@@ -160,8 +168,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Numbers-0-filled-icon" width="64" height="64"/>
-        <image name="Numbers-1-filled-icon" width="64" height="64"/>
+        <image name="bar" width="30" height="1"/>
+        <image name="img_bg" width="320" height="568"/>
+        <image name="img_counter_0" width="28" height="45"/>
+        <image name="img_girl_bust_0" width="125" height="70"/>
+        <image name="img_girl_middle_bg" width="320" height="180"/>
+        <image name="img_girl_under_0" width="320" height="218"/>
+        <image name="img_girl_upper_normal" width="320" height="170"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

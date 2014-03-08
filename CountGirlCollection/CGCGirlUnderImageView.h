@@ -8,16 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-typedef enum {
-    SpeedType_0,
-    SpeedType_20,
-    SpeedType_40,
-    SpeedType_60,
-    SpeedType_80,
-} SpeedType;
+//typedef enum {
+//    SpeedType_0,
+//    SpeedType_20,
+//    SpeedType_40,
+//    SpeedType_60,
+//    SpeedType_80,
+//} SpeedType;
 
 @interface CGCGirlUnderImageView : UIImageView
 
-@property (nonatomic) SpeedType speedType;
+@property (nonatomic) NSUInteger charactorIndex;
+//@property (nonatomic) SpeedType speedType;
+@property (nonatomic) NSInteger speedLevel;
+
+
 
 @end

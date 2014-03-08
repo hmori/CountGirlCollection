@@ -12,6 +12,7 @@
 #import "CGCGirlMiddleImageView.h"
 #import "CGCGirlUnderImageView.h"
 #import "CGCProfileViewController.h"
+#import "CGCImageManager.h"
 
 @interface CGCCounterViewController ()
 @property (weak, nonatomic) IBOutlet CGCCounterImageView *counterImageView2;
@@ -34,7 +35,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    LOG(@"charactorIndex=%lu", (unsigned long)_charactorIndex);
     self.navigationController.navigationBar.hidden = YES;
+    
+    _girlUpperImageView.image = [[CGCImageManager sharedManager] imageOfIndex:_charactorIndex
+                                                                       forKey:@"kGirlUpper_EmotionType_Normal"];
+    _girlUpperImageView.highlightedImage = [[CGCImageManager sharedManager] imageOfIndex:_charactorIndex
+                                                                                  forKey:@"kGirlUpper_EmotionType_Normal_B"];
+    _counterImageView0.image = [UIImage imageNamed:@"img_counter_0"];
+    _counterImageView1.image = [UIImage imageNamed:@"img_counter_0"];
+    _counterImageView2.image = [UIImage imageNamed:@"img_counter_0"];
 }
 
 - (IBAction)menuAction:(UIButton *)sender {
@@ -55,8 +65,6 @@
     UIStoryboard *counterStoryboard = [UIStoryboard storyboardWithName:@"iphone_profile" bundle:nil];
     CGCCounterViewController *counterViewController = [counterStoryboard instantiateViewControllerWithIdentifier:@"CGCProfileViewController"];
 
-//    CGCProfileViewController *profileViewController = [[CGCProfileViewController alloc] init];
-//    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:profileViewController];
     [self presentViewController:counterViewController animated:YES completion:nil];
 }
 
@@ -91,10 +99,9 @@
 
 - (IBAction)debugSpeedUp:(UIButton *)sender {
     LOG_CURRENT_METHOD;
-    if (_speedLevel == 4) {
-        return;
+    if (_speedLevel < 9) {
+        _speedLevel++;
     }
-    _speedLevel++;
     [self refreshSpeed];
 }
 
@@ -110,17 +117,18 @@
 - (void)refreshSpeed {
     LOG_CURRENT_METHOD;
     
-    if (_speedLevel == 0) {
-        [_girlUnderImageView setSpeedType:SpeedType_0];
-    } else if (_speedLevel == 1) {
-        [_girlUnderImageView setSpeedType:SpeedType_20];
-    } else if (_speedLevel == 2) {
-        [_girlUnderImageView setSpeedType:SpeedType_40];
-    } else if (_speedLevel == 3) {
-        [_girlUnderImageView setSpeedType:SpeedType_60];
-    } else if (_speedLevel == 4) {
-        [_girlUnderImageView setSpeedType:SpeedType_80];
-    }
+    [_girlUnderImageView setSpeedLevel:_speedLevel];
+//    if (_speedLevel == 0) {
+//        [_girlUnderImageView setSpeedType:SpeedType_0];
+//    } else if (_speedLevel == 1) {
+//        [_girlUnderImageView setSpeedType:SpeedType_20];
+//    } else if (_speedLevel == 2) {
+//        [_girlUnderImageView setSpeedType:SpeedType_40];
+//    } else if (_speedLevel == 3) {
+//        [_girlUnderImageView setSpeedType:SpeedType_60];
+//    } else if (_speedLevel == 4) {
+//        [_girlUnderImageView setSpeedType:SpeedType_80];
+//    }
 }
 
 - (void)refreshEmotion {

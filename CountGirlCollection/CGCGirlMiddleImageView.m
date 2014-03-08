@@ -6,9 +6,10 @@
 //  Copyright (c) 2014年 Hidetoshi Mori. All rights reserved.
 //
 
-#define kFrameCount 9
+#define kFrameCount 19
 
 #import "CGCGirlMiddleImageView.h"
+#import "CGCImageManager.h"
 
 @implementation CGCGirlMiddleImageView {
     NSTimer *_timer;
@@ -25,11 +26,13 @@
     LOG_CURRENT_METHOD;
     _animated = animated;
     if (_animated) {
-        _timer = [NSTimer scheduledTimerWithTimeInterval:(3.0f / kFrameCount)
-                                                  target:self
-                                                selector:@selector(shakeAnimation)
-                                                userInfo:nil
-                                                 repeats:YES];
+        if (!_timer) {
+            _timer = [NSTimer scheduledTimerWithTimeInterval:(1.2f / kFrameCount)
+                                                      target:self
+                                                    selector:@selector(shakeAnimation)
+                                                    userInfo:nil
+                                                     repeats:YES];
+        }
     } else {
         [_timer invalidate];
         _timer = nil;
@@ -45,8 +48,9 @@
         _index++;
     }
     LOG(@"_index=%ld", (long)_index);
-    NSString *imageName = [NSString stringWithFormat:@"Numbers-%ld-filled-icon", (long)_index];
-    self.image = [UIImage imageNamed:imageName];
+    NSString *keyName = [NSString stringWithFormat:@"kGirlBust_%ld", (long)_index];
+//    self.image = [UIImage imageNamed:imageName];
+    self.image = [[CGCImageManager sharedManager] imageOfIndex:0 forKey:keyName];
 }
 
 @end

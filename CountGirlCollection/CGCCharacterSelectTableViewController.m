@@ -50,6 +50,7 @@
     UIStoryboard *counterStoryboard = [UIStoryboard storyboardWithName:@"iphone_counter" bundle:nil];
     CGCCounterViewController *counterViewController = [counterStoryboard instantiateViewControllerWithIdentifier:@"CGCCounterViewController"];
     
+    counterViewController.charactorIndex = [indexPath row];
     [self.navigationController pushViewController:counterViewController animated:YES];
 }
 

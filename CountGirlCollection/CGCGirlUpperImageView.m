@@ -7,7 +7,7 @@
 //
 
 #import "CGCGirlUpperImageView.h"
-
+#import "CGCImageManager.h"
 
 @implementation CGCGirlUpperImageView {
     NSTimer *_timer;
@@ -41,20 +41,20 @@
     _emotionType = emotionType;
     
     if (emotionType == EmotionType_Normal) {
-        self.image = [UIImage imageNamed:@"Numbers-0-filled-icon"];
-        self.highlightedImage = [UIImage imageNamed:@"Numbers-1-filled-icon"];
+        self.image = [[CGCImageManager sharedManager] imageOfIndex:_charactorIndex forKey:@"kGirlUpper_EmotionType_Normal"];
+        self.highlightedImage = [[CGCImageManager sharedManager] imageOfIndex:_charactorIndex forKey:@"kGirlUpper_EmotionType_Normal_B"];
     } else if (emotionType == EmotionType_Smile) {
-        self.image = [UIImage imageNamed:@"Numbers-2-filled-icon"];
-        self.highlightedImage = [UIImage imageNamed:@"Numbers-3-filled-icon"];
+        self.image = [[CGCImageManager sharedManager] imageOfIndex:_charactorIndex forKey:@"kGirlUpper_EmotionType_Smile"];
+        self.highlightedImage = [[CGCImageManager sharedManager] imageOfIndex:_charactorIndex forKey:@"kGirlUpper_EmotionType_Smile_B"];
     } else if (emotionType == EmotionType_Anger) {
-        self.image = [UIImage imageNamed:@"Numbers-4-filled-icon"];
-        self.highlightedImage = [UIImage imageNamed:@"Numbers-5-filled-icon"];
+        self.image = [[CGCImageManager sharedManager] imageOfIndex:_charactorIndex forKey:@"kGirlUpper_EmotionType_Anger"];
+        self.highlightedImage = [[CGCImageManager sharedManager] imageOfIndex:_charactorIndex forKey:@"kGirlUpper_EmotionType_Anger_B"];
     } else if (emotionType == EmotionType_Affection) {
-        self.image = [UIImage imageNamed:@"Numbers-6-filled-icon"];
-        self.highlightedImage = [UIImage imageNamed:@"Numbers-7-filled-icon"];
+        self.image = [[CGCImageManager sharedManager] imageOfIndex:_charactorIndex forKey:@"kGirlUpper_EmotionType_Affection"];
+        self.highlightedImage = [[CGCImageManager sharedManager] imageOfIndex:_charactorIndex forKey:@"kGirlUpper_EmotionType_Affection_B"];
     } else if (emotionType == EmotionType_Shy) {
-        self.image = [UIImage imageNamed:@"Numbers-8-filled-icon"];
-        self.highlightedImage = [UIImage imageNamed:@"Numbers-9-filled-icon"];
+        self.image = [[CGCImageManager sharedManager] imageOfIndex:_charactorIndex forKey:@"kGirlUpper_EmotionType_Shy"];
+        self.highlightedImage = [[CGCImageManager sharedManager] imageOfIndex:_charactorIndex forKey:@"kGirlUpper_EmotionType_Shy_B"];
     }
 }
 
