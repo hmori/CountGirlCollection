@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Character Select Table View Controller - Root View Controller-->
+        <!--Character Select Table View Controller - 車種選択-->
         <scene sceneID="Dua-st-T0T">
             <objects>
                 <tableViewController storyboardIdentifier="CGCCharacterSelectTableViewController" id="TmT-va-klj" customClass="CGCCharacterSelectTableViewController" sceneMemberID="viewController">
@@ -43,10 +43,11 @@
                             </tableViewSection>
                         </sections>
                         <connections>
+                            <outlet property="dataSource" destination="TmT-va-klj" id="yet-3r-KUd"/>
                             <outlet property="delegate" destination="TmT-va-klj" id="j0Q-VO-YLT"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="WH3-p6-egZ"/>
+                    <navigationItem key="navigationItem" title="車種選択" id="WH3-p6-egZ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6s-g8-jAq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

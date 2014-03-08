@@ -69,19 +69,28 @@
         [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"もう、わたしのウインカーブレブレだぞ" rate:0.2f]];
         [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"もう、エンジンオイル…ぬれちゃうよ" rate:0.2f]];
         [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"そこのボルトなめっちゃった" rate:0.2f]];
-        
+        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"ガソリン。もっと。いれて" rate:0.2f]];
+        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"さいきんわたしにのってくれないよね" rate:0.2f]];
+        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"ウォッシャーえき、きゃあ" rate:0.2f]];
+        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"だっちゃくだっちゃくゥ" rate:0.2f]];
+        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"ふええ、、ピストンげんかいだよう" rate:0.2f]];
+        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"きゅうゆこうオシャカになっちゃううう" rate:0.2f]];
+        [voiceTypeTouchBust addObject:[[CGCVoice alloc] initWithText:@"エンジンオイル。ぬいとくね" rate:0.2f]];
         
         
         NSMutableArray *voiceTypeTouchOther = [NSMutableArray array]; //0-2
         [voiceTypeDict setObject:voiceTypeTouchOther forKey:kVoiceTypeTouchOther];
         
-        [voiceTypeTouchOther addObject:[[CGCVoice alloc] initWithText:@"ガソリン…もっと…いれて" rate:0.2f]];
-        [voiceTypeTouchOther addObject:[[CGCVoice alloc] initWithText:@"さいきんわたしにのってくれないよね" rate:0.2f]];
-        [voiceTypeTouchOther addObject:[[CGCVoice alloc] initWithText:@"ウォッシャーえき、きゃ" rate:0.2f]];
-        [voiceTypeTouchOther addObject:[[CGCVoice alloc] initWithText:@"だっちゃくだっちゃくゥ" rate:0.2f]];
-        [voiceTypeTouchOther addObject:[[CGCVoice alloc] initWithText:@"ふええ、、ピストンげんかいだよう" rate:0.2f]];
-        [voiceTypeTouchOther addObject:[[CGCVoice alloc] initWithText:@"きゅうゆこうオシャカになっちゃううう" rate:0.2f]];
-        [voiceTypeTouchOther addObject:[[CGCVoice alloc] initWithText:@"エンジンオイル…ぬいとくね" rate:0.2f]];
+        [voiceTypeTouchOther addObject:[[CGCVoice alloc] initWithText:@"あんまりさわらないでよね" rate:0.2f]];
+        [voiceTypeTouchOther addObject:[[CGCVoice alloc] initWithText:@"ちょっと、いまのうんてんなによ" rate:0.2f]];
+        [voiceTypeTouchOther addObject:[[CGCVoice alloc] initWithText:@"しもんがつくじゃない" rate:0.2f]];
+        [voiceTypeTouchOther addObject:[[CGCVoice alloc] initWithText:@"いやらしいめでみないで" rate:0.2f]];
+        [voiceTypeTouchOther addObject:[[CGCVoice alloc] initWithText:@"はやくドライブいこうよー" rate:0.2f]];
+        [voiceTypeTouchOther addObject:[[CGCVoice alloc] initWithText:@"たまにはみんなでいくのもたのしいわ" rate:0.2f]];
+        [voiceTypeTouchOther addObject:[[CGCVoice alloc] initWithText:@"ひゃあ、もうやめてよ" rate:0.2f]];
+        [voiceTypeTouchOther addObject:[[CGCVoice alloc] initWithText:@"もっと、早くしようよー" rate:0.2f]];
+        [voiceTypeTouchOther addObject:[[CGCVoice alloc] initWithText:@"もっとなでてえ" rate:0.2f]];
+        [voiceTypeTouchOther addObject:[[CGCVoice alloc] initWithText:@"えへへ、けいちゃんとするドライブ。すき。だよ" rate:0.2f]];
         
         
         

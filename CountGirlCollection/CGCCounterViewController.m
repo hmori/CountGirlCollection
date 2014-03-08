@@ -12,6 +12,8 @@
 #import "CGCGirlMiddleImageView.h"
 #import "CGCGirlUnderImageView.h"
 #import "CGCProfileViewController.h"
+#import "CGCVoiceManager.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface CGCCounterViewController ()
 @property (weak, nonatomic) IBOutlet CGCCounterImageView *counterImageView2;
@@ -64,11 +66,49 @@
     LOG_CURRENT_METHOD;
     [_girlMiddleImageView setAnimated:YES];
     [self countup];
+    
+    CGCVoiceManager *voiceManager = [CGCVoiceManager sharedManager];
+    
+    if (touchBustCount ==  13) {
+        touchBustCount = 0;
+    }
+    
+    AVSpeechSynthesizer* speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
+    NSString* speakingText = [[CGCVoiceManager sharedManager] voiceOfCharacter:0 ofType:kVoiceTypeTouchBust ofIndex:touchBustCount].text;
+    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:speakingText];
+    utterance.rate = [voiceManager voiceOfCharacter:0 ofType:kVoiceTypeTouchBust ofIndex:touchBustCount].rate;        //読み上げる速さ
+    utterance.pitchMultiplier = 1.0f;                           //声の高さ
+    utterance.volume = 1.0f;                                    //声の大きさ
+    //        NSTimeInterval interval = 1.0;
+    //        utterance.preUtteranceDelay = interval;                     //しゃべりだす前のインターバル
+    //        utterance.postUtteranceDelay = interval;                    //しゃべり終わった後の次のメッセージをしゃべるまでのインターバル
+    [speechSynthesizer speakUtterance:utterance];
+    
+    touchBustCount++;
 }
 
 - (IBAction)touchOtherAction:(UIButton *)sender {
     LOG_CURRENT_METHOD;
     [self countup];
+    
+    CGCVoiceManager *voiceManager = [CGCVoiceManager sharedManager];
+    
+    if (touchOtherCount ==  10) {
+        touchOtherCount = 0;
+    }
+    
+    AVSpeechSynthesizer* speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
+    NSString* speakingText = [voiceManager voiceOfCharacter:0 ofType:kVoiceTypeTouchOther ofIndex:touchOtherCount].text;
+    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:speakingText];
+    utterance.rate = [voiceManager voiceOfCharacter:0 ofType:kVoiceTypeTouchOther ofIndex:touchOtherCount].rate;        //読み上げる速さ
+    utterance.pitchMultiplier = 1.0f;                           //声の高さ
+    utterance.volume = 1.0f;                                    //声の大きさ
+    //        NSTimeInterval interval = 1.0;
+    //        utterance.preUtteranceDelay = interval;                     //しゃべりだす前のインターバル
+    //        utterance.postUtteranceDelay = interval;                    //しゃべり終わった後の次のメッセージをしゃべるまでのインターバル
+    [speechSynthesizer speakUtterance:utterance];
+    
+    touchOtherCount++;
 }
 
 - (IBAction)debugEmotionUp:(UIButton *)sender {

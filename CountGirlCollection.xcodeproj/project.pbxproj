@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2908276C18CA4CE500D16265 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2908276B18CA4CE500D16265 /* AVFoundation.framework */; };
 		2908277018CA833900D16265 /* CGCCharacterSelectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2908276F18CA833900D16265 /* CGCCharacterSelectTableViewController.m */; };
+		2908277B18CADF7900D16265 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 2908277A18CADF7900D16265 /* profile.png */; };
 		B63BC89F18CA341B004BBF2C /* CGCCounterImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B63BC89E18CA341B004BBF2C /* CGCCounterImageView.m */; };
 		B63BC8A218CA41B0004BBF2C /* CGCGirlUpperImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B63BC8A118CA41B0004BBF2C /* CGCGirlUpperImageView.m */; };
 		B63BC8A518CA41CE004BBF2C /* CGCGirlMiddleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B63BC8A418CA41CE004BBF2C /* CGCGirlMiddleImageView.m */; };
@@ -48,6 +49,7 @@
 		2908276B18CA4CE500D16265 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		2908276E18CA833900D16265 /* CGCCharacterSelectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGCCharacterSelectTableViewController.h; sourceTree = "<group>"; };
 		2908276F18CA833900D16265 /* CGCCharacterSelectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGCCharacterSelectTableViewController.m; sourceTree = "<group>"; };
+		2908277A18CADF7900D16265 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		B63BC89D18CA341B004BBF2C /* CGCCounterImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGCCounterImageView.h; sourceTree = "<group>"; };
 		B63BC89E18CA341B004BBF2C /* CGCCounterImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGCCounterImageView.m; sourceTree = "<group>"; };
 		B63BC8A018CA41B0004BBF2C /* CGCGirlUpperImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGCGirlUpperImageView.h; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 		B6E66E1218CA16FB0061CB27 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2908277A18CADF7900D16265 /* profile.png */,
 				B6E66E1318CA16FB0061CB27 /* CountGirlCollection-Info.plist */,
 				B6E66E1418CA16FB0061CB27 /* InfoPlist.strings */,
 				B6E66E1718CA16FB0061CB27 /* main.m */,
@@ -319,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B63BC8B018CA96BA004BBF2C /* iphone_profile.storyboard in Resources */,
+				2908277B18CADF7900D16265 /* profile.png in Resources */,
 				B6E66E1618CA16FB0061CB27 /* InfoPlist.strings in Resources */,
 				B6E66E1E18CA16FB0061CB27 /* Images.xcassets in Resources */,
 				B6E66E3C18CA17C60061CB27 /* iphone_counter.storyboard in Resources */,

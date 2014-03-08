@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CGCProfileViewController : UIViewController{
-    UIImageView *characterImageView;
-    
     UILabel *nameLabel;
     UILabel *statusLabel;
     UILabel *profileLabel;
