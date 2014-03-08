@@ -52,9 +52,12 @@
 - (IBAction)profileAction:(UIButton *)sender {
     LOG_CURRENT_METHOD;
     
-    CGCProfileViewController *profileViewController = [[CGCProfileViewController alloc] init];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:profileViewController];
-    [self presentViewController:navigationController animated:YES completion:nil];
+    UIStoryboard *counterStoryboard = [UIStoryboard storyboardWithName:@"iphone_profile" bundle:nil];
+    CGCCounterViewController *counterViewController = [counterStoryboard instantiateViewControllerWithIdentifier:@"CGCProfileViewController"];
+
+//    CGCProfileViewController *profileViewController = [[CGCProfileViewController alloc] init];
+//    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:profileViewController];
+    [self presentViewController:counterViewController animated:YES completion:nil];
 }
 
 - (IBAction)touchBustAction:(UIButton *)sender {
