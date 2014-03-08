@@ -36,4 +36,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)closeAction:(UIButton *)sender {
+    LOG_CURRENT_METHOD;
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end

@@ -126,6 +126,9 @@
                                 <state key="normal" title="SpeedUp">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="debugSpeedUp:" destination="stz-oz-due" eventType="touchUpInside" id="T09-DV-nIR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIq-IK-TQE">
                                 <rect key="frame" x="220" y="531" width="84" height="30"/>
@@ -133,6 +136,9 @@
                                 <state key="normal" title="SpeedDown">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="debugSpeedDown:" destination="stz-oz-due" eventType="touchUpInside" id="ttC-KT-Nbj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
