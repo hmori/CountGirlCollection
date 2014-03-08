@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CGCProfileViewController : UIViewController
+@interface CGCProfileViewController : UIViewController{
+    UIImageView *characterImageView;
+    
+    UILabel *nameLabel;
+    UILabel *statusLabel;
+    UILabel *profileLabel;
+    UILabel *speechLabel;
+}
 
 @end
