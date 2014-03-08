@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface CGCCounterViewController : UIViewController
+{
+    int touchBustCount;
+    int touchOtherCount;
+}
 
 @end
