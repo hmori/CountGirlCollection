@@ -49,7 +49,7 @@
     } else if (emotionType == EmotionType_Anger) {
         self.image = [UIImage imageNamed:@"Numbers-4-filled-icon"];
         self.highlightedImage = [UIImage imageNamed:@"Numbers-5-filled-icon"];
-    } else if (emotionType == EmotionType_Sad) {
+    } else if (emotionType == EmotionType_Affection) {
         self.image = [UIImage imageNamed:@"Numbers-6-filled-icon"];
         self.highlightedImage = [UIImage imageNamed:@"Numbers-7-filled-icon"];
     } else if (emotionType == EmotionType_Shy) {

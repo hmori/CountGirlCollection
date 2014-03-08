@@ -136,7 +136,7 @@
     if (_emotionLevel == 0) {
         [_girlUpperImageView setEmotionType:EmotionType_Normal];
     } else if (_emotionLevel == 1) {
-        [_girlUpperImageView setEmotionType:EmotionType_Sad];
+        [_girlUpperImageView setEmotionType:EmotionType_Affection];
     } else if (_emotionLevel == 2) {
         [_girlUpperImageView setEmotionType:EmotionType_Anger];
     } else if (_emotionLevel == 3) {

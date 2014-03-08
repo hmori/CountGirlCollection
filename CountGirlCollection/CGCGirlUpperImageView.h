@@ -13,7 +13,7 @@ typedef enum {
     EmotionType_Smile,
     EmotionType_Anger,
     EmotionType_Shy,
-    EmotionType_Sad,
+    EmotionType_Affection,
 } EmotionType;
 
 @interface CGCGirlUpperImageView : UIImageView
