@@ -15,7 +15,6 @@
 #import "CGCVoiceManager.h"
 #import <AVFoundation/AVFoundation.h>
 #import "CGCImageManager.h"
->>>>>>> Stashed changes
 
 @interface CGCCounterViewController ()
 @property (weak, nonatomic) IBOutlet CGCCounterImageView *counterImageView2;
@@ -87,7 +86,7 @@
     AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:speakingText];
     utterance.rate = [voiceManager voiceOfCharacter:0 ofType:kVoiceTypeTouchBust ofIndex:touchBustCount].rate;        //読み上げる速さ
     utterance.pitchMultiplier = 1.0f;                           //声の高さ
-    utterance.volume = 1.0f;                                    //声の大きさ
+    utterance.volume = 2.0f;                                    //声の大きさ
     //        NSTimeInterval interval = 1.0;
     //        utterance.preUtteranceDelay = interval;                     //しゃべりだす前のインターバル
     //        utterance.postUtteranceDelay = interval;                    //しゃべり終わった後の次のメッセージをしゃべるまでのインターバル
@@ -111,7 +110,7 @@
     AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:speakingText];
     utterance.rate = [voiceManager voiceOfCharacter:0 ofType:kVoiceTypeTouchOther ofIndex:touchOtherCount].rate;        //読み上げる速さ
     utterance.pitchMultiplier = 1.0f;                           //声の高さ
-    utterance.volume = 1.0f;                                    //声の大きさ
+    utterance.volume = 2.0f;                                    //声の大きさ
     //        NSTimeInterval interval = 1.0;
     //        utterance.preUtteranceDelay = interval;                     //しゃべりだす前のインターバル
     //        utterance.postUtteranceDelay = interval;                    //しゃべり終わった後の次のメッセージをしゃべるまでのインターバル
